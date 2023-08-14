@@ -1,0 +1,37 @@
+{
+  "name": "react-cairo",
+  "version": "1.0.0",
+  "description": "the repository where all react cairo related apps are featured for community",
+  "repository": "https://github.com/moweex/react-cairo",
+  "author": "Moweex Team",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "clean": "rm -rf node_modules",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier -w"
+    ]
+  }
+}
