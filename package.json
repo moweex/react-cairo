@@ -5,7 +5,6 @@
   "repository": "https://github.com/moweex/react-cairo",
   "author": "Moweex Team",
   "license": "Apache-2.0",
-  "main": "index.js",
   "private": true,
   "scripts": {
     "prepare": "husky install",
