@@ -1,0 +1,28 @@
+name: Lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint-commits:
+    name: commitlint-gh-action
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: restore modules
+        uses: actions/cache@master
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install --freeze.lock
+
+      - name: lint commits
+        run: yarn lint:commits
