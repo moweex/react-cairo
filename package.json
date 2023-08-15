@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "clean": "rm -rf node_modules",
     "precommit": "lint-staged",
-    "lint:commits": "commitlint"
+    "lint:commits": "commitlint --from=30c2021"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
