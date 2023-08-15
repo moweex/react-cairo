@@ -9,7 +9,8 @@
   "scripts": {
     "prepare": "husky install",
     "clean": "rm -rf node_modules",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lint:commits": "commitlint"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
