@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "clean": "rm -rf node_modules/ && rm -rf dist/"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.7",
