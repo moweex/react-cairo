@@ -1,0 +1,28 @@
+name: Android Unit Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - web/**
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: ⬢ Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: 👀 Check out repository
+        uses: actions/checkout@v3
+      - name: restore modules
+        uses: actions/cache@master
+        with:
+          path: mobile/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('web/yarn.lock') }}
+      - name: Install Dependencies
+        run: cd web && yarn install --freeze.lock
+      - name: Build Next App
+        run: cd web && yarn build
