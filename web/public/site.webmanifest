@@ -1,0 +1,22 @@
+{
+  "name": "React Cairo",
+  "short_name": "React Cairo",
+  "description": "React Cairo meetup is growing stronger, there are a lot of good opportunities for everyone in this area and we are trying to create a strong community to share your thoughts and recommendations for the next React Cairo meetup. As we have mentioned before, It's your community so, it's going to be bigger with you. We are trying to create great opportunities to connect, and know our community.",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#fff",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

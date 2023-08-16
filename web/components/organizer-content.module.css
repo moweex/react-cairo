@@ -1,0 +1,42 @@
+.wrapper {
+    margin-top: var(--space-10x);
+    text-align: center;
+}
+
+.logo img {
+    width: 15rem;
+}
+
+.wrapper .description {
+    color: var(--secondary-color);
+    width: 60%;
+    margin: 2rem auto;
+    text-align: initial;
+}
+
+.description strong {
+    color: var(--brand);
+    font-size: 18px;
+}
+
+.wrapper .links {
+    width: 60%;
+    margin: auto;
+    text-align: right;
+}
+
+.wrapper .links img {
+    width: 25px;
+    height: 25px;
+    margin: 0 .5rem;
+}
+
+@media (max-width: 991px) {
+    .wrapper .links {
+        width: 90%;
+    }
+
+    .wrapper .description {
+        width: 90%;
+    }
+}

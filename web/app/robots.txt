@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Allow: /become-sponsor
+Disallow: /register
+Sitemap: https://react-cairo.com/sitemap.xml

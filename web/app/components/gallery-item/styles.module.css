@@ -1,0 +1,22 @@
+.quarter {
+  width: 100%;
+}
+
+.half {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .quarter {
+    width: 25%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .full {
+    width: 100%;
+  }
+}

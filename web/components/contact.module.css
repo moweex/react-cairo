@@ -1,0 +1,64 @@
+/**
+ * Copyright 2020 Vercel Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.contact {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: var(--space-12x);
+}
+
+.contact-email {
+  color: #fff;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.wrapper {
+  margin: 3rem auto;
+  max-width: 70%;
+  padding: 0 16px;
+  /* text-align: center; */
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.wrapper h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.wrapper h2 a {
+  font-size: 1.1rem;
+}
+
+.wrapper .condition {
+  text-align: initial;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 5rem auto;
+    max-width: 100%;
+  }
+
+  .wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+}
