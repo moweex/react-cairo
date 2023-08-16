@@ -20,7 +20,7 @@ jobs:
       - name: restore modules
         uses: actions/cache@master
         with:
-          path: mobile/node_modules
+          path: web/node_modules
           key: ${{ runner.os }}-${{ hashFiles('web/yarn.lock') }}
       - name: Install Dependencies
         run: cd web && yarn install --freeze.lock
