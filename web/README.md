@@ -2,7 +2,7 @@
 
 - Assuming your terminal respond on `pwd` command by route ending in `/web`
 - Run `yarn install`
-- Create a `.env` file and fill the variables with the following
+- Create a `.env` file in root folder `/web` and fill the variables with the following
   - DATO CMS: use this template [clone our template](https://dashboard.datocms.com/clone?projectId=105198&name=React%20Cairo%20Template)
   - supabase DB: [supabase](https://supabase.com/docs)
     - use `schema.sql` from `web/lib/db-providers/supabase/schema.sql` to create tables
@@ -12,3 +12,16 @@
   - [OPTIONAL] SMTP server of your own to send emails
 - Fill the required env variables
 - Run `yarn dev`, app should be now running on localhost:3000 if you filled CMS content correctly.
+
+## DATO CMS required content
+
+- Main Page Content
+  - Fill required fields
+- Social
+  - Add at least one link
+- Header
+  - Add speaker signup link
+- Benefits section
+  - Add header content
+- Partner section
+  - Add at least one partner
